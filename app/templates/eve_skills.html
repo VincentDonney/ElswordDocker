@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve Skills</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/eve_classes">Eve Classes</a>
+        <a href="/eve_skills">Eve Skills</a>
+    </div>
+
+    <h1>Eve Skills</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Skill ID</th>
+                <th>Skill Name</th>
+                <th>Class ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for eve_skill in eve_skills %}
+            <tr>
+                <td>{{ eve_skill.skill_id }}</td>
+                <td>{{ eve_skill.skill_name }}</td>
+                <td>{{ eve_skill.class_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #3498db); /* Gradient background */
+}
+
+.navbar {
+    background: linear-gradient(to right, #2c3e50, #3498db); /* Same gradient as body */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50; /* Darker blue on hover */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.centered-div {
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centered-div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #3498db; /* Blue heading color */
+}
+
+p {
+    color: #555; /* Dark gray paragraph color */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff; /* White background for the table */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #3498db; /* Blue header background */
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5; /* Light gray on hover */
+    transition: background-color 0.3s ease;
+}
